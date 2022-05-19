@@ -1,23 +1,36 @@
-import React from 'react';
-import { FaSearchLocation } from 'react-icons/fa';
+import React ,{useState} from 'react';
 import { AiOutlineWhatsApp } from 'react-icons/ai';
 import { GrInstagram } from 'react-icons/gr';
 import { GrLinkedinOption } from 'react-icons/gr';
 
 
-
-
-
-
-export default function SearchBar(props) {
+export default function SearchBar({onSearch}) {
   // acá va tu código
+  const [city, setCity] = useState("");
+
+  const handleInputChange = (event) => {
+    setCity(event.target.value);
+  };
+
+
   return (
     <>
   <nav className='form-Container'>
     <div className='from'>
-    <form>
-        <input type="text" autoComplete='off' name='clima' placeholder='Ciudad...'/>
-        <button onClick={()=> props.onSearch('Denver')}><FaSearchLocation/></button>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        onSearch(city);
+        setCity("");
+      }}>
+        <input 
+        type="text" 
+        name='clima' 
+        placeholder='Ciudad...'
+        onChange={(event) => handleInputChange(event)}
+        value={city}
+        />
+        <input type="submit" value="Agregar" />
     </form>
     </div>
     <div className='Text'>

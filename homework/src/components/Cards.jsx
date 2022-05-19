@@ -1,5 +1,4 @@
 import React from 'react';
-import cities from '../data';
 import Card from './Card';
 
 
@@ -13,10 +12,20 @@ export default function Cards(props) {
     );
   }
   return ( 
-  <div className='cards-container'>
-    {
-      cities.map((p,index) => <Card key={p.id}name={p.name} max={p.main.temp_max} min={p.main.temp_min} img={p.weather[0].icon} onClose={()=>{console.log(alert(p.name));}}/>)
-    }
+    <div className='cards-container'>
+    {props.cities?.map((ciudad, index) => {
+      return (
+        <Card
+          key={ciudad.id}
+          max={ciudad.max}
+          min={ciudad.min}
+          img={ciudad.img}
+          onClose={props.onClose}
+          name={ciudad.name}
+          identificador={ciudad.id}
+        />
+      );
+    })}
   </div>
   )
 };

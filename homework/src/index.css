@@ -90,6 +90,17 @@ nav .icons .Linkedin{
 }
 .form-Container .from form{
   width: 100%;
+  display: flex;
+}
+.form-Container .from form input[type ='submit']{
+  font-weight: 700;
+  border-left: 1px solid white;
+  width: 35%;
+  border-radius: 0%;
+  transition: .2s;
+}
+.form-Container .from form input[type ='submit']:hover{
+  background-color: rgba(255, 255, 255, 0.233);
 }
 
 form input{
@@ -109,7 +120,7 @@ form input{
 form input::placeholder{
   opacity: 1;
   color: white;
-  font-size: 20px;
+  font-size: 23px;
 
 }
 
