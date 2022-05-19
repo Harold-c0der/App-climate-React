@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/App-climate-React/static/css/main.250baed2.chunk.css",
+    "main.js": "/App-climate-React/static/js/main.a6a36701.chunk.js",
+    "main.js.map": "/App-climate-React/static/js/main.a6a36701.chunk.js.map",
+    "runtime-main.js": "/App-climate-React/static/js/runtime-main.0f6ccfae.js",
+    "runtime-main.js.map": "/App-climate-React/static/js/runtime-main.0f6ccfae.js.map",
+    "static/js/2.1f45213d.chunk.js": "/App-climate-React/static/js/2.1f45213d.chunk.js",
+    "static/js/2.1f45213d.chunk.js.map": "/App-climate-React/static/js/2.1f45213d.chunk.js.map",
+    "index.html": "/App-climate-React/index.html",
+    "static/css/main.250baed2.chunk.css.map": "/App-climate-React/static/css/main.250baed2.chunk.css.map",
+    "static/js/2.1f45213d.chunk.js.LICENSE.txt": "/App-climate-React/static/js/2.1f45213d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/App-climate-React/static/media/impact.ce5d66e2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f6ccfae.js",
+    "static/js/2.1f45213d.chunk.js",
+    "static/css/main.250baed2.chunk.css",
+    "static/js/main.a6a36701.chunk.js"
+  ]
+}
